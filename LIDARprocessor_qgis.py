@@ -123,7 +123,7 @@ else:
 	if os.path.isdir(LAZ_files):
 		for p in Pathlist:
 			shutil.copy2(p, LAZ_files)
-	processing.runalg("lidartools:lastilepro",LAZ_files,"*.laz",False,False,2000,25,True,False,LAZ_tile,"LAZ.laz",0,"",False,False)
+	processing.runalg("lidartools:lastilepro",LAZ_files,"*.laz",False,False,4000,25,True,False,LAZ_tile,"LAZ.laz",0,"",False,False)
 	
 	for laz in os.listdir(LAZ_tile):
 		lazfile = str(laz)
